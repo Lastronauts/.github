@@ -1,4 +1,4 @@
-# The MIT License
+The MIT License
 
 Copyright &copy; 2022 Lastronauts
 
