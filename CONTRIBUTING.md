@@ -38,10 +38,28 @@
 これらを使用して、**皆から愛される**Issuesを作成してください。
 もし、あなたの表現力がこれらのテンプレートを追い越してしまった場合は、テンプレートを追加してほしい旨のIssuesを提出してください。
 
-## Use a Consistent Coding Style
+## Use a Consistent Styles
 
-コーディングスタイルを一貫させることは、あなたにとっても私たちにとっても重要なことです。
-PRsなどを提出する場合は、言語や拡張子ごとにフォーマッタを使用し、あなたのコードをよりよいものに仕上げてください。
+commit履歴やコーディングスタイルを一貫させることは、あなたにとっても私たちにとっても重要なことです。
+私たちが守るべき開発規約には、以下のようなものがあります。
+
+### Branches
+
+* 使用するブランチは[GitHub Flow](https://docs.github.com/ja/get-started/quickstart/github-flow)に従い、以下とする。
+  * `main`: 常にデプロイ可能なブランチ
+  * `develop`: 統合ブランチ
+  * `feature-*`: 新機能開発ブランチ
+  * `fix-*`: 問題修正ブランチ
+* `main`ブランチおよび`develop`ブランチのcommitには、[Git Commit Message Editor](https://marketplace.visualstudio.com/items?itemName=phoihos.git-commit-message-editor)を使用する。
+* `main`ブランチおよび`develop`ブランチを無許可pushから保護する。
+  ただし`develop`ブランチへのmergeは、CIが通過していればプルリクエストが承認されていなくても実行することができる。
+* プルリクエスト承認後のmergeには以下の方法を使用する。
+  * `develop`→`main`: *Create a merge commit*
+  * `feature-*/fix-*`→`develop`: *Squash and merge*
+
+### Coding
+
+* `main`ブランチおよび`develop`ブランチにmergeするコードは、リンタやフォーマッタによって最低限のフォーマットがなされている必要がある。
 
 ## References
 
