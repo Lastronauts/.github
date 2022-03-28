@@ -2,7 +2,7 @@
 
 <!--
 例:
-close: #123
+* close: #123
 -->
 
 # Summary
